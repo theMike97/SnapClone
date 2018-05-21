@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="floatingheads.snapclone.activities.AddFriendsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@mipmap/ic_arrow_back_white_24dp"
+        app:title="Add Friends"
+        app:titleTextColor="#ffff" />
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/add_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBackground="@color/colorPrimary"
+        app:searchSuggestionBackground="@color/colorPrimary"
+        app:searchCloseIcon="@mipmap/ic_close_white_24dp"
+        app:searchBackIcon="@mipmap/ic_arrow_back_white_24dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"></com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+    <floatingheads.snapclone.objects.UsersView
+        android:id="@+id/users_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar" ></floatingheads.snapclone.objects.UsersView>
+
+</RelativeLayout>

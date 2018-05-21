@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/screenButtons"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mSavedImg"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="false">
+        <!-- This is the camera preview source settings, with the faceOverlay nested inside of it-->
+        <floatingheads.snapclone.camera2VisionTools.CameraSourcePreview
+            android:id="@+id/preview2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <floatingheads.snapclone.camera2VisionTools.GraphicOverlay
+                android:id="@+id/faceOverlay"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </floatingheads.snapclone.camera2VisionTools.CameraSourcePreview>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ui_btns"
+        tools:context="floatingheads.snapclone.activities.CameraPreviewActivity">
+
+    <ImageButton
+        android:id="@+id/btn_switch"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/othercam_w"
+        tools:ignore="ContentDescription"/>
+
+    <ImageButton
+        android:id="@+id/btn_takepicture"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/btn_shutter_background"
+        tools:ignore="ContentDescription"/>
+
+    <ImageButton
+        android:id="@+id/btn_filters"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btn_msgs"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/btn_msgs"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/filters_w"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_msgs"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/msgs_w"
+        tools:ignore="ContentDescription"/>
+
+    <ImageButton
+        android:id="@+id/btn_friends"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/friends_w"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/ivAutoFocus"
+        android:contentDescription="@null"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_autofocus"
+        android:visibility="gone"/>
+
+    <!-- Used for opening ChatFragment -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Used for opening bottom filter list -->
+    <include
+        android:id="@+id/layout_filter"
+        layout="@layout/test_filter_layout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+# Built Application Files
+*.apk
+*.ap_
+
+# Java Class Files
+*.class
+
+# OS X Files 
+.DS_Store
+
+# Android
+*.iml
+.gradle
+.idea/
+local.properties
+openCVLibrary340/build
+build/
+captures
+.externalNativeBuild
+client/app/src/main/jni/Android.mk
+
+# Server
+server/node_modules
+server/package-lock.json
+server/config.json

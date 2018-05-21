@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Quinn Salas",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "express": "^4.16.2",
+    "forever": "^0.15.3",
+    "mysql": "^2.15.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}

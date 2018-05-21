@@ -1,0 +1,76 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">SnapClone</string>
+
+    <!-- Login / Sign Up Stuff -->
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_log_in">Log In</string>
+    <string name="action_sign_up"> Sign Up</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permission needed for email autocompletion</string>
+    <string name="suggest_signup">Don\'t have an account? Sign Up!</string>
+    <string name="suggest_login">Already have an account? Sign in!</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+
+    <!-- Friends Stuff -->
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="friend_card_text"> Sample Friend</string>
+
+    <!-- Messages Stuff -->
+    <string name="msg_greeting">Send and Receive Messages Here!</string>
+    <string name="default_notification_channel_id">Channel ID</string>
+    <string name="chat_input">Enter Message</string>
+    <string name="add_btn_content_description">Attach an image!</string>
+    <string name="chat_bubble_content_description">Image</string>
+
+    <!-- Camera Stuff -->
+    <string name="open_camera"> Open Camera </string>
+
+    <!-- Camera2 Stuff -->
+    <string name="take_picture">PICTURE</string>
+    <string name="switch_camera">SWITCH</string>
+    <string name="record_video">VIDEO</string>
+    <string name="stop_video">STOP</string>
+
+    <!-- Fix for Strange Rendering Error -->
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <!-- Rationale in FaceTrackerActivity -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+
+    <!-- Navigation -->
+    <string name="nav_profile">Profile</string>
+    <string name="nav_friends">Friends</string>
+    <string name="nav_new_message">New Message</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_messages">Messages</string>
+    <string name="nav_chat">Chat</string>
+
+    <!-- Search and Add Friends -->
+    <string name="search_friends">Search</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="profile_friends">Friends</string>
+    <string name="profile_points">Points</string>
+    <string name="file_saved">Image Saved! Check path root/sdcard/Pictures/Snapclone</string>
+    <string name="title_activity_profile_view">ProfileViewActivity</string>
+    <string name="send_fr">Add Friend</string>
+
+    <string name="add_filter">Add Filter</string>
+
+</resources>
