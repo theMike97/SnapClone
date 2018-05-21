@@ -58,9 +58,10 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Android Studio](https://developer.android.com/studio/) - Android IDE
+* [Node.js](https://nodejs.org/en/) - Serverside
+* [Volley](https://developer.android.com/training/volley/) - HTTPS protocol for android
+* [MySQL](https://www.mysql.com/) - Used to communicate with databases
 
 ## Contributing
 
