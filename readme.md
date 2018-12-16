@@ -11,50 +11,35 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
-```
+1.) Install Java 8
+2.) Install Android Studio 
 
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Installation instructions will vary based on your OS
 
 ```
-Give the example
-```
 
-And repeat
+### Setting up Android Studio
 
-```
-until finished
-```
+for the OpenCV library, you may need a special toolchain version.
 
-End with an example of getting some data out of the system or using it for a little demo
+1.) Go to Tools > SDK Manger > SDK Platform and click the checkbox by Android 8.0 and Android 5.0
 
-## Running the tests
+2.) Go to Tools > SDK Manager > SDK Tools and click the checkbox by CMake and NDK then click "Apply"
 
-Explain how to run the automated tests for this system
+3.) Go to (this link)![https://developer.android.com/ndk/downloads/older_releases] download android-ndk-r17c-*your-operating-system*.zip
 
-### Break down into end to end tests
+4.) Extract the zip folder and copy toolchain from *path-to-android-ndk-r17c*/toolchains/*necessary-toolchain* to *your-android-studio-install-location*/Sdk/ndk-bundle/toolchains
 
-Explain what these tests test and why
+5.) Follow any prompts to update gradle / build tools / sdk
 
-```
-Give an example
-```
+6.) Go to File > Project Structure and under Project change Android Plugin Version to Version 3.1.3
 
-### And coding style tests
+7.) Go to File > Sync Project with Gradle Files
 
-Explain what these tests test and why
+8.) Go to Build > Make Project
 
-```
-Give an example
-```
+9.) Run > app
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -73,13 +58,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Akira Demoss** - _OpenCV, Volley_ - [github name](https://github.com/github_name)
+* **Akira Demoss** - _OpenCV, Volley_ - [akirademoss](https://github.com/akirademoss)
 * **Quinn Salas** - _Backend, UI_ - [qsalas](https://github.com/qsalas)
 * **Michael Lauderback** - _Volley, User Interface, MySQL_ - [theMike97](https://github.com/theMike97)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
