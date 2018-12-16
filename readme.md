@@ -26,7 +26,7 @@ for the OpenCV library, you may need a special toolchain version.
 
 2.) Go to Tools > SDK Manager > SDK Tools and click the checkbox by CMake and NDK then click "Apply"
 
-3.) Go to (this link)![https://developer.android.com/ndk/downloads/older_releases] download android-ndk-r17c-*your-operating-system*.zip
+3.) Go to [this link](https://developer.android.com/ndk/downloads/older_releases) download android-ndk-r17c-*your-operating-system*.zip
 
 4.) Extract the zip folder and copy toolchain from *path-to-android-ndk-r17c*/toolchains/*necessary-toolchain* to *your-android-studio-install-location*/Sdk/ndk-bundle/toolchains
 
